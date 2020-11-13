@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -7,16 +8,19 @@ function Header() {
             <div id="header-wrapper">
                 <div id="header" class="container">
                     <div id="logo">
-                        <h1><a href="#">ABDUL WAQAR</a></h1>
-                        <p>Design by <a href="#" rel="nofollow">TEMPLATED</a></p>
+                        <h1>ABDUL WAQAR</h1>
+                        <p>Design by TEMPLATED</p>
                     </div>
 
                 </div>
                 <div id="menu" class="container">
                     <ul>
-                        <li class="current_page_item"><a href="/home" >Homepage</a></li>
-                        <li><a href="/about"  >About Us</a></li>
-                        <li><a href="/contact" >Contact Us</a></li>
+                    <nav>
+       <li><Link to="/">Home</Link> </li> 
+       <li> <Link to="/about">About</Link></li>
+       <li> <Link to="/contacct">Contact</Link></li>
+      </nav>
+                      
                     </ul>
                 </div>
             </div>
